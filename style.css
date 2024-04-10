@@ -15,6 +15,13 @@
     box-sizing: border-box;
 }
 
+
+.container-grid {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .banner {
     /* vh -> Porcentagem da ALTURA da viewport (janela) */
     height: 100vh;
@@ -101,6 +108,7 @@ h2 {
     display: flex;
     justify-content: space-between;
 }
+
 .card {
     height: 400px;
     width: 250px;
@@ -150,16 +158,67 @@ h2 {
     border-radius: 4px;
     color: white;
 
-font-family: "Montserrat";
-font-size: 17px;
-font-weight: 600;
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: 600;
 
-cursor: pointer;
+    cursor: pointer;
 
-transition: background-color 500ms;
+    transition: background-color 500ms;
 
 }
 
 .card button:hover {
     background-color: #ad4929;
+}
+
+#portfolio {
+    height: 250px;
+
+    margin-bottom: 120px;
+
+    background-image: url(img/bonecos.png);
+    background-size: 250px;
+
+    background-repeat: repeat;
+
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+.filtro {
+    height: 100%;
+    width: 100%;
+
+    background-color: #47208bc2;
+
+    position: absolute;
+    top: 0;
+}
+
+#portfolio .container-grid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+#portfolio a {
+    width: fit-content;
+    
+    font-family: "Anta";
+    font-size: 28px;
+
+    color: white;
+
+    z-index: 0;
+
+   
+}
+
+#portfolio a:hover {
+    transform: scale(1.05);
 }
