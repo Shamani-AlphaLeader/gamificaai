@@ -58,7 +58,7 @@ header {
 
 }
 
-.conteudo-banner p {
+.conteudo-banner {
     height: calc(100vh - 280px);
     display: flex;
     align-items: center;
@@ -71,6 +71,41 @@ header {
     font-family: "Anta";
     font-size: 28px;
 
+}
+
+.conteudo-banner span {
+    display: block;
+
+    overflow: hidden;
+
+    border-right: 6px solid var(--laranja-gamifica);
+    white-space: nowrap;
+
+    animation:
+        digitando 2s steps(40, end),
+        cursor 0.75s step-end infinite;
+}
+
+@keyframes digitando {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes cursor {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--laranja-gamifica);
+    }
 }
 
 #sobre {
@@ -403,5 +438,4 @@ footer .container-grid {
 
 .icones-redes a:hover {
     color: var(--laranja-gamifica)
-
 }
