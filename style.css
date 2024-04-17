@@ -465,22 +465,22 @@ footer .container-grid {
         border: none;
     }
 
-    header svg{
-        fill:white;
+    header svg {
+        fill: white;
     }
 
     nav.menu {
         height: 500px;
         width: 350px;
-    
+
         padding: 0px 30px;
-    
+
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
-    
+
         background-color: #000000f0;
-    
+
         position: absolute;
         top: 165px;
         right: 0px;
@@ -490,7 +490,7 @@ footer .container-grid {
         padding: 100px 15%;
     }
 
-    .card{
+    .card {
         height: 320px;
         width: 200px;
     }
@@ -504,7 +504,7 @@ footer .container-grid {
     .container-cards {
         flex-wrap: wrap;
     }
-    
+
     .card {
         height: 400px;
 
@@ -538,3 +538,137 @@ footer .container-grid {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .card {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #sobre {
+        height: unset;
+        margin-bottom: 40px;
+
+    }
+
+    #sobre h2 {
+        margin-bottom: 30px;
+    }
+
+    #cases {
+        margin-bottom: unset;
+    }
+
+    #portfolio a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .campo,
+    .campo-textarea,
+    #contato form button {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-grid {
+        width: 90%;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    .banner {
+        background-size: cover;
+    }
+
+    .conteudo-banner p {
+        font-size: 22px;
+    }
+
+    nav.menu {
+        width: 100%;
+
+        display: none;
+
+    }
+
+    #sobre {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #sobre p {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    #cases.container-grid {
+        width: 100%;
+        margin: unset;
+    }
+
+    .container-cards {
+        flex-wrap: nowrap;
+
+        gap: 40px;
+
+        overflow-x: auto;
+    }
+
+    .card {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+    }
+
+    .card:first-child {
+        margin-left: 30px;
+    }
+
+    .card:last-child {
+        margin-right: 30px;
+    }
+
+    #portfolio {
+        margin-bottom: 0;
+    }
+    
+    #contato {
+        padding-top: 70px;
+
+        background-color: var(--roxo-gamifica);
+        color: white;
+    }
+
+    #contato h2 {
+        margin-bottom: 0px;
+    }
+
+    #contato form {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width:400px){
+    header img {
+        width: 160px;
+    }
+
+    header svg {
+        width: 40px;
+    }
+
+    .conteudo-banner p {
+        font-size: 20px;
+    }
+
+    footer img {
+        width: 200px;
+    }
+}
