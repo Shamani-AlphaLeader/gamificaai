@@ -12,7 +12,7 @@
     <script src="script.js" defer></script>
 </head>
 
-<body>
+<body onload="renderizarCases()">
     <div class="banner">
         <header class="container-grid">
             <img src="img/logo.svg" alt="Logo da empresa Gamifica AI">
@@ -44,9 +44,9 @@
         
     <div class="botoes"   >
         
-        <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg></button>
-        <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg></button>
-        <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg></button>
+        <button onclick="selecionarSlide(0)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg></button>
+        <button onclick="selecionarSlide(1)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg></button>
+        <button onclick="selecionarSlide(2)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg></button>
 
     </div> 
     </div>
@@ -74,26 +74,8 @@
     <section class="container-grid" id="cases">
         <h2>Cases de Sucesso</h2>
 
-        <div class="container-cards">
-            <div class="card">
-                <img src="https://unsplash.it/640/400" alt="">
-                <p>Reduzimos o desperdicio de comida em uma escola em 80%</p>
-                <button>Ver Mais</button>
-            </div>
-            <div class="card">
-                <img src="https://unsplash.it/640/400" alt="">
-                <p>Reduzimos o desperdicio de comida em uma escola em 80%</p>
-                <button>Ver Mais</button>
-            </div>
-            <div class="card">
-                <img src="https://unsplash.it/640/400" alt="">
-                <p>Reduzimos o desperdicio de comida em uma escola em 80%</p>
-                <button>Ver Mais</button>
-            </div>
-            <div class="card">
-                <img src="https://unsplash.it/640/400" alt="">
-                <p>Reduzimos o desperdicio de comida em uma escola em 80%</p>
-                <button>Ver Mais</button>
+        <div id="lista-cards"class="container-cards">
+           
             </div>
         </div>
     </section>
