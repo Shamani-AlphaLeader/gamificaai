@@ -102,27 +102,7 @@ const selecionarSlide = (indiceSlide) => {
     banner.classList.add(slides[indiceSlide])
 }
 
-let listaCases = [
-    {
-        imagem: "https://unsplash.it/640/400?image=34",
-        descricao: "Uma empresa de tecnologia lanca um desafio de gamificacao onde os funcionarios devem propor e implementar ideias inovadoras."
-    },
-
-    {
-        imagem: "https://unsplash.it/640/400?image=35",
-        descricao: "Uma empresa de consultoria cria uma narrativa de gamificacao para seu programa de treinamento."
-    },
-
-    {
-        imagem: "https://unsplash.it/640/400?image=43",
-        descricao: "Uma empresa implementa uma competicao gamificada entre equipes que competem pelo topo do ranking."
-    },
-
-    {
-        imagem: "https://unsplash.it/640/400?image=44",
-        descricao: "Uma empresa promove o bem estar dos funcionarios atraves de um desafio de gamificacao de condicionamento fisico."
-    },
-]
+let listaCases = []
 
 const renderizarCases = () => {
     let elementoLista = document.getElementById("lista-cards")
@@ -139,4 +119,45 @@ const renderizarCases = () => {
     })
 
     elementoLista.innerHTML = template
+}
+
+const carregarCases = () => {
+//metodo HTTP GET - Read = carregar.
+    fetch("http://localhost:3000/cases")
+        .then(resposta => resposta.json())
+        .then((dados) => {
+            listaCases = dados
+            renderizarCases()
+        })
+}
+
+const solicitarOrcamento = () => {
+    // Pegar valores dos inputs
+    let valorNome = document.getElementById("campo-nome").value
+    let valorEmail = document.getElementById("campo-email").value
+    let valorDescricao = document.getElementById("campo-descricao").value
+
+    // Organizar objeto com os valores
+    let dadosForm = {
+        nome: valorNome,
+        email: valorEmail,
+        descricao: valorDescricao
+    }
+
+    // Enviar requisicao para a api
+    //127.0.0.1 significa a mesma coisa que localhost. Sendo assim, 127.0.0.1 = localhost.
+    //metodo HTTP GET - Create = cadastrar ou criar.
+    fetch("http://127.0.0.1:3000/solicitacoes", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(dadosForm)
+    })
+    .then(resposta => console.log(resposta))
+    .catch(erro => console.error(erro))
+
+    // Limpar os campos
+    // Mostrar alert com msg de sucesso
+    //CASO DE ERRO - alert com msg de erro
 }
