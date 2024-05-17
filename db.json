@@ -2,19 +2,23 @@
   "cases": [
     {
       "imagem": "https://unsplash.it/640/400?image=52",
-      "descricao": "Uma empresa de tecnologia lanca um desafio de gamificacao onde os funcionarios devem propor e implementar ideias inovadoras."
+      "descricao": "Uma empresa de tecnologia lanca um desafio de gamificacao onde os funcionarios devem propor e implementar ideias inovadoras.",
+      "id": "83d5"
     },
     {
       "imagem": "https://unsplash.it/640/400?image=53",
-      "descricao": "Uma empresa de consultoria cria uma narrativa de gamificacao para seu programa de treinamento."
+      "descricao": "Uma empresa de consultoria cria uma narrativa de gamificacao para seu programa de treinamento.",
+      "id": "c0bf"
     },
     {
       "imagem": "https://unsplash.it/640/400?image=61",
-      "descricao": "Uma empresa implementa uma competicao gamificada entre equipes que competem pelo topo do ranking."
+      "descricao": "Uma empresa implementa uma competicao gamificada entre equipes que competem pelo topo do ranking.",
+      "id": "6e49"
     },
     {
       "imagem": "https://unsplash.it/640/400?image=62",
-      "descricao": "Uma empresa promove o bem estar dos funcionarios atraves de um desafio de gamificacao de condicionamento fisico."
+      "descricao": "Uma empresa promove o bem estar dos funcionarios atraves de um desafio de gamificacao de condicionamento fisico.",
+      "id": "1997"
     }
   ],
   "solicitacoes": [
@@ -23,6 +27,72 @@
       "nome": "Bruno&Ryo",
       "email": "br-email.co.jp",
       "descricao": "oTocoCruPegandoFogo."
+    },
+    {
+      "id": "6df3",
+      "nome": "",
+      "email": "",
+      "descricao": ""
+    },
+    {
+      "id": "0d10",
+      "nome": "Bruno&Ryo",
+      "email": "br-sc@shamanisconcept.co.jp",
+      "descricao": "sabemos de tudo, poha!!!"
+    },
+    {
+      "id": "3c3c",
+      "nome": "",
+      "email": "",
+      "descricao": ""
+    },
+    {
+      "id": "bacd",
+      "nome": "B&R",
+      "email": "b&r@sc.co.jp",
+      "descricao": "minna!!!"
+    },
+    {
+      "id": "09f6",
+      "nome": "",
+      "email": "",
+      "descricao": ""
+    },
+    {
+      "id": "8ba9",
+      "nome": "B&R",
+      "email": "b&r@sc.co.jp",
+      "descricao": "minna!!!"
+    },
+    {
+      "id": "7c06",
+      "nome": "",
+      "email": "",
+      "descricao": ""
+    },
+    {
+      "id": "3718",
+      "nome": "B&R",
+      "email": "b&r@sc.co.jp",
+      "descricao": "vsdjvfhb,gjs"
+    },
+    {
+      "id": "5103",
+      "nome": "",
+      "email": "",
+      "descricao": ""
+    },
+    {
+      "id": "c8c4",
+      "nome": "",
+      "email": "",
+      "descricao": ""
+    },
+    {
+      "id": "0e11",
+      "nome": "Bruno&Ryo",
+      "email": "br-sc@shamanisconcept.com.jp",
+      "descricao": "gdggdfjbjhbvkn"
     }
   ]
 }
